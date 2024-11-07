@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #282c34;             */
+    
+    
+    
+    
+    /* Dark background for contrast */
+    color: #ffffff; /* White text for readability */
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #5c4837; /* Highlight color */
+}
+
+.home .intro {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.one{
+    background: rgba(255, 114, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 40px); /* Four items in a row */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.one:hover {
+    transform: translateY(-8px);
+}
+
+.one h2 {
+    color: #ff7200;
+    margin-bottom: 10px;
+}
+
+.one p {
+    font-size: 16px;
+    color: black;
+}
+
+.cta {
+    margin-top: 40px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="home">
+        <h1>Welcome to YorApp</h1>
+        <p class="intro">
+            Discover the exciting world of Web Design and Development. We provides advanced level of web applications.
+        </p>
+        
+        <div class="features">
+            <div class="one">
+                <h2>Interactive Web Pages</h2>
+                <p>Users interact and engage through interactive elements.</p>
+            </div>
+            <div class="one">
+                <h2>Comprehensive Material</h2>
+                <p>Access to a wide range of resources.</p>
+            </div>
+            <div class="one">
+                <h2>Real-world Projects</h2>
+                <p>Hands-on projects to apply your skills in practical scenarios.</p>
+            </div>
+            <div class="one">
+                <h2>Expert Designs</h2>
+                <p>Designed by experienced professionals in the field.</p>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <h2>Join Our Community Today!</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

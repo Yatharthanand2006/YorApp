@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url(web.png); 
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    color: black;
+    max-width: 1200px; 
+    margin: auto; /* Center the section */
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+
+}
+
+.main::before {
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    border-radius: 10px; /* Match the border radius */
+    z-index: 1; /* Place below the text */
+}
+
+.main h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff7200; /* Highlight color */
+    z-index: 2; /* Place above the overlay */
+    position: relative;
+}
+
+.intro p,
+.mission p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    z-index: 2; /* Place above the overlay */
+    position: relative;
+}
+
+.mission {
+    margin: 40px 0;
+}
+
+.main h2 {
+    font-size: 36px;
+    margin: 30px 0 10px;
+    color: #ff7200; /* Highlight color */
+    z-index: 2; /* Place above the overlay */
+    position: relative;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px; /* Centered list */
+    text-align: left; /* Align left for readability */
+}
+
+.list li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.a {
+    margin-top: 40px;
+}
+
+.a h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    z-index: 2; /* Place above the overlay */
+    position: relative;
+}
+
+.a p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    z-index: 2; /* Place above the overlay */
+    position: relative;
+}
+
+.a button {
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>About YorApp</h1>
+        <div class="intro">
+            <p>
+                <b>At YorApp, we believe that everyone should have the opportunity to learn and grow in the field of web design and development. Our mission is to provide high-quality, accessible education that empowers individuals to create impactful digital experiences.
+           </b> </p>
+        </div>
+    
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                <b>To deliver comprehensive and engaging learning experiences that foster creativity, collaboration, and critical thinking in web development.
+         </b>   </p>
+    
+            <h2>Our Vision</h2>
+            <p>
+               <b> A world where anyone, regardless of background, can access the tools and knowledge to succeed in the digital landscape.
+            </b></p>
+        </div>
+    
+        <h2>Our Core Values</h2>
+        <ul class="list">
+            <li>💡 <strong>Innovation:</strong><b> Embracing new ideas and technologies to enhance learning.</b></li>
+            <li>🌍 <strong>Inclusivity:</strong><b> Designing courses for everyone, regardless of experience.</b></li>
+            <li>🤝 <strong>Community:</strong> <b>Supporting learners through collaboration and shared experiences.</b></li>
+            <li>🔧 <strong>Practical Skills:</strong><b> Focusing on real-world applications to prepare you for the job market.</b></li>
+        </ul>
+    
+        <div class="a">
+            <h2>Why Choose Us?</h2>
+            <p>
+               <b> With expert instructors, hands-on projects, and a vibrant community, YorApp is your gateway to mastering web design and development. Join us today and unlock your potential!</b>
+            </p>
+            <button class="cn"><a href="#">Learn More</a></button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
